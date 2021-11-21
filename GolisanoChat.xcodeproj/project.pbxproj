@@ -11,6 +11,13 @@
 		625172CD2749D5FB00DE82BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172CC2749D5FB00DE82BD /* ContentView.swift */; };
 		625172CF2749D5FC00DE82BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625172CE2749D5FC00DE82BD /* Assets.xcassets */; };
 		625172D22749D5FC00DE82BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625172D12749D5FC00DE82BD /* Preview Assets.xcassets */; };
+		625172DF2749DDB000DE82BD /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172DE2749DDB000DE82BD /* ChatController.swift */; };
+		625172E12749E00B00DE82BD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172E02749E00B00DE82BD /* LoginController.swift */; };
+		625172E32749E0E900DE82BD /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172E22749E0E900DE82BD /* RegisterController.swift */; };
+		625172E52749E1DE00DE82BD /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172E42749E1DE00DE82BD /* ImageController.swift */; };
+		625172E72749E20900DE82BD /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172E62749E20900DE82BD /* VideoController.swift */; };
+		625172E92749E3DC00DE82BD /* NewChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172E82749E3DC00DE82BD /* NewChatController.swift */; };
+		625172EB2749E42E00DE82BD /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625172EA2749E42E00DE82BD /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		625172CC2749D5FB00DE82BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		625172CE2749D5FC00DE82BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625172D12749D5FC00DE82BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		625172DE2749DDB000DE82BD /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		625172E02749E00B00DE82BD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		625172E22749E0E900DE82BD /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		625172E42749E1DE00DE82BD /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		625172E62749E20900DE82BD /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		625172E82749E3DC00DE82BD /* NewChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatController.swift; sourceTree = "<group>"; };
+		625172EA2749E42E00DE82BD /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,10 @@
 		625172C92749D5FB00DE82BD /* GolisanoChat */ = {
 			isa = PBXGroup;
 			children = (
+				625172DB2749D8DA00DE82BD /* ViewModels */,
+				625172DA2749D8D200DE82BD /* Models */,
+				625172D92749D8CB00DE82BD /* Views */,
+				625172D82749D8BE00DE82BD /* Controllers */,
 				625172CA2749D5FB00DE82BD /* GolisanoChatApp.swift */,
 				625172CC2749D5FB00DE82BD /* ContentView.swift */,
 				625172CE2749D5FC00DE82BD /* Assets.xcassets */,
@@ -65,6 +83,41 @@
 				625172D12749D5FC00DE82BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		625172D82749D8BE00DE82BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				625172DE2749DDB000DE82BD /* ChatController.swift */,
+				625172E02749E00B00DE82BD /* LoginController.swift */,
+				625172E22749E0E900DE82BD /* RegisterController.swift */,
+				625172E42749E1DE00DE82BD /* ImageController.swift */,
+				625172E62749E20900DE82BD /* VideoController.swift */,
+				625172E82749E3DC00DE82BD /* NewChatController.swift */,
+				625172EA2749E42E00DE82BD /* ProfileController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		625172D92749D8CB00DE82BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		625172DA2749D8D200DE82BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		625172DB2749D8DA00DE82BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625172E92749E3DC00DE82BD /* NewChatController.swift in Sources */,
+				625172E32749E0E900DE82BD /* RegisterController.swift in Sources */,
 				625172CD2749D5FB00DE82BD /* ContentView.swift in Sources */,
+				625172E12749E00B00DE82BD /* LoginController.swift in Sources */,
 				625172CB2749D5FB00DE82BD /* GolisanoChatApp.swift in Sources */,
+				625172EB2749E42E00DE82BD /* ProfileController.swift in Sources */,
+				625172DF2749DDB000DE82BD /* ChatController.swift in Sources */,
+				625172E52749E1DE00DE82BD /* ImageController.swift in Sources */,
+				625172E72749E20900DE82BD /* VideoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +334,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,9 +364,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
